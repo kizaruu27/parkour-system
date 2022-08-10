@@ -7,14 +7,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float rotationSpeed = 500f;
-
+    [SerializeField] private float turnSpeed = 500f;
+    
+    private CamerController cameraController;
     private Quaternion targetRotation;
-    private CamerController _camerController;
-
+    
     private void Awake()
     {
-        _camerController = Camera.main.GetComponent<CamerController>();
+        cameraController = Camera.main.GetComponent<CamerController>();
     }
 
     private void Update()
@@ -25,17 +25,15 @@ public class PlayerController : MonoBehaviour
         float moveAmmount = Mathf.Abs(horizontal) + Mathf.Abs(vertical);
 
         Vector3 moveInput = (new Vector3(horizontal, 0, vertical)).normalized;
-        Vector3 moveDir = _camerController.PlannarRotation * moveInput;
+        Vector3 moveDir = cameraController.PlannarRotation * moveInput;
+
 
         if (moveAmmount > 0)
         {
             transform.position += moveDir * moveSpeed * Time.deltaTime;
             targetRotation = Quaternion.LookRotation(moveDir);
         }
-
-        transform.rotation =
-            Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
-
+        transform.rotation = 
+            Quaternion.RotateTowards(transform.rotation, targetRotation, turnSpeed * Time.deltaTime);
     }
 }

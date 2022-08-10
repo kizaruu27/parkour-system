@@ -6,53 +6,50 @@ using UnityEngine;
 public class CamerController : MonoBehaviour
 {
     [SerializeField] private Transform followTarget;
-    [SerializeField] private float distance = 5;
+    [SerializeField] private float distance = 5f;
+
+    [SerializeField] private float minAngleValue = -20f;
+    [SerializeField] private float maxAngleValue = 45f;
+
+    [SerializeField] private float rotationSpeed = 2f;
 
     [SerializeField] private Vector2 frammingOffset;
 
-    [SerializeField] private float minVerticalAngle = -45;
-    [SerializeField] private float maxVerticalAngle = 45;
+    [SerializeField] private bool invertX;
+    [SerializeField] private bool invertY;
 
-    [SerializeField] private float rotationSpeed = 2;
-
-    [SerializeField] private bool invertedX;
-    [SerializeField] private bool invertedY;
-
-    private float invertedXVal;
-    private float invertedYVal;
+    private float invertedXValue;
+    private float invertedYValue;
 
     private float rotationX;
     private float rotationY;
 
     private void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     private void LateUpdate()
     {
-        invertedXVal = invertedX ? -1 : 1;
-        invertedYVal = invertedY ? -1 : 1;
+        invertedXValue = invertX ? -1 : 1;
+        invertedYValue = invertY ? -1 : 1;
         
-        rotationX += Input.GetAxisRaw("Mouse Y") * invertedYVal * rotationSpeed;
-        rotationY += Input.GetAxisRaw("Mouse X") * invertedXVal * rotationSpeed;
+        rotationX += Input.GetAxisRaw("Mouse Y") * invertedYValue * rotationSpeed;
+        rotationY += Input.GetAxisRaw("Mouse X") * invertedXValue * rotationSpeed;
 
-        rotationX = Mathf.Clamp(rotationX, minVerticalAngle, maxVerticalAngle);
+        rotationX = Mathf.Clamp(rotationX, minAngleValue, maxAngleValue);
 
         Quaternion targetRotation = Quaternion.Euler(rotationX, rotationY, 0);
         Vector3 focusPosition = followTarget.position + new Vector3(frammingOffset.x, frammingOffset.y);
         
         transform.position = focusPosition - targetRotation * new Vector3(0, 0, distance);
         transform.rotation = targetRotation;
+
     }
-    
+
     public Quaternion PlannarRotation => Quaternion.Euler(0, rotationY, 0);
 }
-
-
-
-
 
 
 
