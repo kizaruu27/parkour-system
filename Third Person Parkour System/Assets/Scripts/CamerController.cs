@@ -35,8 +35,8 @@ public class CamerController : MonoBehaviour
         invertedXValue = invertX ? -1 : 1;
         invertedYValue = invertY ? -1 : 1;
         
-        rotationX += Input.GetAxisRaw("Mouse Y") * invertedYValue * rotationSpeed;
-        rotationY += Input.GetAxisRaw("Mouse X") * invertedXValue * rotationSpeed;
+        rotationX += Input.GetAxisRaw("Camera Y") * invertedYValue * rotationSpeed;
+        rotationY += Input.GetAxisRaw("Camera X") * invertedXValue * rotationSpeed;
 
         rotationX = Mathf.Clamp(rotationX, minAngleValue, maxAngleValue);
 
