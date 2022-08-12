@@ -8,7 +8,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Controller V2/CameraV2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player Controller V2/PlayerControllerV2.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -70,6 +71,8 @@
       <workItem from="1660113302901" duration="9615000" />
       <workItem from="1660185751221" duration="476000" />
       <workItem from="1660188247973" duration="3766000" />
+      <workItem from="1660271197143" duration="2163000" />
+      <workItem from="1660273476193" duration="3380000" />
     </task>
     <servers />
   </component>
