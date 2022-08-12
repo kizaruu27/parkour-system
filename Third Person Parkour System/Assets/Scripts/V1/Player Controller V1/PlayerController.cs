@@ -40,8 +40,7 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDir = cameraController.PlannarRotation * moveInput;
         
         GroundCheck();
-        Debug.Log("Is Grounded: " + isGrounded);
-
+        
         if (isGrounded)
         {
             yVelocity = -0.5f;
