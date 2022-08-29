@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     private bool isGrounded;
     private float yVelocity;
+    private bool hasControl = true;
 
     private void Awake()
     {
@@ -38,6 +39,8 @@ public class PlayerController : MonoBehaviour
 
         Vector3 moveInput = (new Vector3(horizontal, 0, vertical)).normalized;
         Vector3 moveDir = cameraController.PlannarRotation * moveInput;
+
+        if (!hasControl) return;
         
         GroundCheck();
         
@@ -74,5 +77,17 @@ public class PlayerController : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawSphere(transform.TransformPoint(groundCheckOffset), groundCheckRadius);
+    }
+
+    public void SetControl(bool hasControl)
+    {
+        this.hasControl = hasControl;
+        controller.enabled = hasControl;
+
+        if (!hasControl)
+        {
+            anim.SetFloat("moveAmmount", 0f);
+            targetRotation = transform.rotation;
+        }
     }
 }
