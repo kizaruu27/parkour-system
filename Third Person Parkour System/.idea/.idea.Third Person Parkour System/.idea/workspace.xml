@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b85d578b-0042-4f6c-bca3-0ef1ece68dbb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Third Person Parkour System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Third Person Parkour System/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Animator/CharacterController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animator/CharacterController.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/V1/Parkour System V1/ParkourAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/V1/Parkour System V1/ParkourAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/V1/Parkour System V1/ParkourController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/V1/Parkour System V1/ParkourController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/V1/Player Controller V1/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/V1/Player Controller V1/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +80,7 @@
       <workItem from="1660273476193" duration="3380000" />
       <workItem from="1660295530243" duration="3498000" />
       <workItem from="1661744095398" duration="4115000" />
-      <workItem from="1661757535584" duration="1522000" />
+      <workItem from="1661757535584" duration="2570000" />
     </task>
     <servers />
   </component>

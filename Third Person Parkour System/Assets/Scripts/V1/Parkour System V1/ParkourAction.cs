@@ -9,12 +9,14 @@ public class ParkourAction : ScriptableObject
     public float minHeight;
     public float maxHeight;
     public bool rotateToObstacle;
+    public float postActionDelay;
     
     [Header("Target Matching")]
     public bool enableTargetMatching = true;
     public AvatarTarget matchBodyPart;
     public float matchStartTime;
     public float matchTargetTime;
+    public Vector3 matchPosWeight = new Vector3(0, 1, 0);
 
     public Quaternion TargetRotation
     {

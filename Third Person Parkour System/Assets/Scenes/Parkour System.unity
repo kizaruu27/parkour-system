@@ -1393,6 +1393,7 @@ MonoBehaviour:
   parkourActions:
   - {fileID: 11400000, guid: e441317a780918243af2182619a48695, type: 2}
   - {fileID: 11400000, guid: a0d07204cf09cf24681cea75fde8584c, type: 2}
+  - {fileID: 11400000, guid: 1be161f70fc3b8243870d05e1cf97fb6, type: 2}
 --- !u!114 &1667496670
 MonoBehaviour:
   m_ObjectHideFlags: 0
