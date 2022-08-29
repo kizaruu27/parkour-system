@@ -3,12 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float turnSpeed = 500f;
+    public float turnSpeed = 500f;
     
     private CamerController cameraController;
     private Quaternion targetRotation;

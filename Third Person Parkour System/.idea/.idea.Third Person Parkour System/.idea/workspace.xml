@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b85d578b-0042-4f6c-bca3-0ef1ece68dbb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Third Person Parkour System/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Third Person Parkour System/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animator/CharacterController.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Animator/CharacterController.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Parkour System.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Parkour System.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/V1/Parkour System V1/ParkourAction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/V1/Parkour System V1/ParkourAction.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/V1/Parkour System V1/ParkourController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/V1/Parkour System V1/ParkourController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/V1/Player Controller V1/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/V1/Player Controller V1/PlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2022.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +26,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "discord-application",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;discord-application&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Program Files\Unity Version\2022.1.3f1\Editor\Unity.exe" />
@@ -80,7 +80,8 @@
       <workItem from="1660271197143" duration="2163000" />
       <workItem from="1660273476193" duration="3380000" />
       <workItem from="1660295530243" duration="3498000" />
-      <workItem from="1661744095398" duration="3415000" />
+      <workItem from="1661744095398" duration="4115000" />
+      <workItem from="1661757535584" duration="1522000" />
     </task>
     <servers />
   </component>
